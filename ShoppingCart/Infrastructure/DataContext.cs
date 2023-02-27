@@ -4,7 +4,7 @@ using ShoppingCart.Models;
 
 namespace ShoppingCart.Infrastructure
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<AppUser>
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         { }
